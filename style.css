@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1100px;
+  background: #C4C4C4;
+  margin: 0 auto;
+}
+
+.block {
+  display: inline-block;
+  width: 1000px;
+  height: 200px;
+  margin: 50px;
+  background: #E6E6E6;
+}
+
+.section-1 {
+  width: 200px;
+  background: #FC8F8F;
+}
+
+.section-2 {
+  width: 200px;
+  background: #FC8F8F;
+}
+
+.section-3 {
+  width: 200px;
+  background: #FC8F8F;
+}
+
+.section-1:nth-child(1) {
+  float: left;
+}
+
+.section-1:nth-child(2) {
+  float: right;
+}
+
+.mini-box {
+  width: 100px;
+  background: #FC8F8F;
+}
+
+/* тут задом наперёд селекторы 2-й чайл это 5-й а 5-й это 2-й */
+.section-2:nth-child(1) {
+  float: left;
+}
+
+.mini-box:nth-child(2) {
+  float: right;
+}
+
+.mini-box:nth-child(3) {
+  float: right;
+  margin-right: 15px;
+}
+
+.mini-box:nth-child(4) {
+  float: right;
+  margin-right: 15px;
+}
+
+.mini-box:nth-child(5) {
+  float: right;
+  margin-right: 15px;
+}
+
+
+.block::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+p {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 63px 0 62px 0;
+  margin: 0px;
+}
+
+.mini-box p:nth-child(n) {
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 31px 0 31.5px 0;
+  margin: 0px;
+}
+
+.section-3:nth-child(1) {
+  float: left;
+  margin-right: 15px;
+}
+
+.section-3:nth-child(2) {
+  float: left;
+}
+
+.section-3:nth-child(3) {
+  float: right;
+  margin-left: 15px;
+}
+
+.section-3:nth-child(4) {
+  float: right;
+}
