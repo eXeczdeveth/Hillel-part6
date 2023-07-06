@@ -12,7 +12,6 @@
 .block {
   display: inline-block;
   width: 1000px;
-  height: 200px;
   margin: 50px;
   background: #E6E6E6;
 }
